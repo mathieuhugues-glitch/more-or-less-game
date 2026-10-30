@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>More or Less Party - Host screen</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎲</text></svg>">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/host.css">
+</head>
+<body>
+<div id="stage">
+  <section id="lobby" class="screen">
+    <div class="lobby-left">
+      <div class="brand"><span class="logo">⬆️⬇️</span><div><h1>MORE OR LESS PARTY</h1><p>The estimation game show · higher, lower, closest wins</p></div></div>
+      <div class="card settings">
+        <div><h2>Game mode</h2><div id="modePicks" class="mode-picks"></div></div>
+        <div class="opts-row">
+          <div><h2>Questions</h2><div id="countPick" class="seg"></div></div>
+          <div><h2>Answer time</h2><div id="timerPick" class="seg"></div></div>
+          <div><h2>Difficulty</h2><div id="diffPick" class="seg"></div></div>
+        </div>
+        <div><h2>Categories</h2><div id="catPicks" class="cat-picks"></div></div>
+        <div class="seen"><span id="seenInfo"></span><button id="resetSeen" class="btn ghost small">Reset played questions</button></div>
+      </div>
+      <div class="start-row">
+        <button id="startBtn" class="btn primary big" disabled>Start game ▶</button>
+        <span id="startHint" class="hint">Waiting for players to join…</span>
+      </div>
+    </div>
+    <div class="lobby-right">
+      <div class="card join">
+        <div class="join-title">Join on your phone</div>
+        <div class="qr-wrap"><div id="qr" class="qr"><div class="qr-wait">Connecting…</div></div></div>
+        <div class="join-or">or open <b id="joinUrl">…</b> and enter code</div>
+        <div id="roomCode" class="room-code">····</div>
+        <div id="netWarn" class="net-warn"></div>
+      </div>
+      <div class="card players-card">
+        <h2>Players <span id="pCount" class="pill">0</span> <span class="hint" style="font-size:20px">2–10 players</span></h2>
+        <div id="lobbyPlayers" class="lobby-players"><div class="empty">Nobody yet - scan the QR code!</div></div>
+      </div>
+    </div>
+  </section>
+  <section id="game" class="screen hidden"></section>
+  <div id="controls" class="controls">
+    <button id="cPause" title="Pause auto-advance (P)">⏸</button>
+    <button id="cNext" title="Next / skip (Space)">⏭</button>
+    <button id="cMute" title="Sound on/off (M)">🔊</button>
+    <button id="cFull" title="Fullscreen (F)">⛶</button>
+    <button id="cQuit" title="End game and return to setup">✕</button>
+  </div>
+  <div id="pausedBadge" class="paused-badge hidden">⏸ Paused - press ▶ or Space to continue</div>
+  <div id="toast" class="toast hidden"></div>
+  <canvas id="confetti"></canvas>
+</div>
+<script src="vendor/peerjs.min.js"></script>
+<script src="vendor/qrcode.js"></script>
+<script src="js/scoring.js"></script>
+<script src="js/net.js"></script>
+<script src="js/sound.js"></script>
+<script src="js/host.js"></script>
+</body>
+</html>

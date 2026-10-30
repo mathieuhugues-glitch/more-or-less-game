@@ -1,0 +1,623 @@
+{
+ "version": 1,
+ "categories": [
+  "Geography",
+  "Science & Nature",
+  "History",
+  "Sports",
+  "Entertainment",
+  "Weird & Fun Facts"
+ ],
+ "questions": [
+  {
+   "id": "geo-001",
+   "category": "Geography",
+   "difficulty": 1,
+   "text": "How high is Mount Everest, in metres (2020 survey, rounded)?",
+   "answer": 8849,
+   "unit": "m",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Mount_Everest",
+   "note": "8,848.86 m (2020 survey), rounded"
+  },
+  {
+   "id": "geo-002",
+   "category": "Geography",
+   "difficulty": 2,
+   "text": "How many countries does the Danube flow through or along?",
+   "answer": 10,
+   "unit": "countries",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Danube"
+  },
+  {
+   "id": "geo-003",
+   "category": "Geography",
+   "difficulty": 2,
+   "text": "What is the total area of Sweden, in square kilometres?",
+   "answer": 450295,
+   "unit": "km²",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Sweden"
+  },
+  {
+   "id": "geo-004",
+   "category": "Geography",
+   "difficulty": 3,
+   "text": "What is the surface area of Lake Victoria, Africa's largest lake, in square kilometres?",
+   "answer": 59947,
+   "unit": "km²",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Lake_Victoria"
+  },
+  {
+   "id": "geo-005",
+   "category": "Geography",
+   "difficulty": 3,
+   "text": "How deep is Lake Baikal at its deepest point, in metres?",
+   "answer": 1642,
+   "unit": "m",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Lake_Baikal"
+  },
+  {
+   "id": "geo-006",
+   "category": "Geography",
+   "difficulty": 1,
+   "text": "How many member states does the United Nations have (2025)?",
+   "answer": 193,
+   "unit": "member states",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Member_states_of_the_United_Nations"
+  },
+  {
+   "id": "geo-007",
+   "category": "Geography",
+   "difficulty": 2,
+   "text": "How high is Mount Kilimanjaro, in metres?",
+   "answer": 5895,
+   "unit": "m",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Mount_Kilimanjaro"
+  },
+  {
+   "id": "geo-008",
+   "category": "Geography",
+   "difficulty": 2,
+   "text": "How many time zones does Russia use?",
+   "answer": 11,
+   "unit": "time zones",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Time_in_Russia"
+  },
+  {
+   "id": "geo-009",
+   "category": "Geography",
+   "difficulty": 3,
+   "text": "How tall is Venezuela's Angel Falls, the world's highest uninterrupted waterfall, in metres?",
+   "answer": 979,
+   "unit": "m",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Angel_Falls"
+  },
+  {
+   "id": "geo-010",
+   "category": "Geography",
+   "difficulty": 2,
+   "text": "How many UN member states are in Africa?",
+   "answer": 54,
+   "unit": "countries",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/List_of_sovereign_states_and_dependent_territories_in_Africa",
+   "note": "54 of the 56 sovereign states are UN members"
+  },
+  {
+   "id": "sci-001",
+   "category": "Science & Nature",
+   "difficulty": 1,
+   "text": "How many bones are in a typical adult human skeleton?",
+   "answer": 206,
+   "unit": "bones",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Human_skeleton"
+  },
+  {
+   "id": "sci-002",
+   "category": "Science & Nature",
+   "difficulty": 2,
+   "text": "What is the speed of light in a vacuum, in kilometres per second (rounded down)?",
+   "answer": 299792,
+   "unit": "km/s",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Speed_of_light",
+   "note": "299,792.458 km/s"
+  },
+  {
+   "id": "sci-003",
+   "category": "Science & Nature",
+   "difficulty": 1,
+   "text": "How many chemical elements are on the periodic table (2025)?",
+   "answer": 118,
+   "unit": "elements",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Periodic_table"
+  },
+  {
+   "id": "sci-004",
+   "category": "Science & Nature",
+   "difficulty": 3,
+   "text": "At what temperature does pure iron melt, in °C?",
+   "answer": 1538,
+   "unit": "°C",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Iron"
+  },
+  {
+   "id": "sci-005",
+   "category": "Science & Nature",
+   "difficulty": 2,
+   "text": "What is the average distance between the Earth and the Moon, in kilometres?",
+   "answer": 384400,
+   "unit": "km",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Moon",
+   "note": "Mean distance 384,400 km (Wikipedia note: 384,401 km)"
+  },
+  {
+   "id": "sci-006",
+   "category": "Science & Nature",
+   "difficulty": 1,
+   "text": "How many teeth are in a full adult human set, wisdom teeth included?",
+   "answer": 32,
+   "unit": "teeth",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Human_tooth"
+  },
+  {
+   "id": "sci-007",
+   "category": "Science & Nature",
+   "difficulty": 2,
+   "text": "How fast does sound travel in dry air at 20 °C, in metres per second?",
+   "answer": 343,
+   "unit": "m/s",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Speed_of_sound"
+  },
+  {
+   "id": "sci-008",
+   "category": "Science & Nature",
+   "difficulty": 2,
+   "text": "How many chromosomes are in a normal human body cell?",
+   "answer": 46,
+   "unit": "chromosomes",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Karyotype"
+  },
+  {
+   "id": "sci-009",
+   "category": "Science & Nature",
+   "difficulty": 3,
+   "text": "How tall is Hyperion, the world's tallest known living tree, in metres (2026 measurement, rounded)?",
+   "answer": 116,
+   "unit": "m",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Hyperion_(tree)",
+   "note": "116.22 m in 2026, rounded"
+  },
+  {
+   "id": "sci-010",
+   "category": "Science & Nature",
+   "difficulty": 2,
+   "text": "How many Earth days does one year on Mars last (rounded)?",
+   "answer": 687,
+   "unit": "days",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Mars"
+  },
+  {
+   "id": "his-001",
+   "category": "History",
+   "difficulty": 1,
+   "text": "In what year did the Berlin Wall fall?",
+   "answer": 1989,
+   "unit": "year",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Berlin_Wall"
+  },
+  {
+   "id": "his-002",
+   "category": "History",
+   "difficulty": 1,
+   "text": "In what year did the Titanic sink?",
+   "answer": 1912,
+   "unit": "year",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Titanic"
+  },
+  {
+   "id": "his-003",
+   "category": "History",
+   "difficulty": 1,
+   "text": "In what year was the Bastille stormed in Paris?",
+   "answer": 1789,
+   "unit": "year",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Storming_of_the_Bastille"
+  },
+  {
+   "id": "his-004",
+   "category": "History",
+   "difficulty": 2,
+   "text": "In what year was the Battle of Hastings fought?",
+   "answer": 1066,
+   "unit": "year",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Battle_of_Hastings"
+  },
+  {
+   "id": "his-005",
+   "category": "History",
+   "difficulty": 1,
+   "text": "In what year did humans first walk on the Moon?",
+   "answer": 1969,
+   "unit": "year",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Apollo_11"
+  },
+  {
+   "id": "his-006",
+   "category": "History",
+   "difficulty": 2,
+   "text": "How many years did the Hundred Years' War actually last?",
+   "answer": 116,
+   "unit": "years",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Hundred_Years'_War",
+   "note": "1337-1453"
+  },
+  {
+   "id": "his-007",
+   "category": "History",
+   "difficulty": 3,
+   "text": "In what year did the Stockholm Bloodbath take place?",
+   "answer": 1520,
+   "unit": "year",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Stockholm_Bloodbath"
+  },
+  {
+   "id": "his-008",
+   "category": "History",
+   "difficulty": 2,
+   "text": "In what year was the Eiffel Tower completed?",
+   "answer": 1889,
+   "unit": "year",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Eiffel_Tower"
+  },
+  {
+   "id": "his-009",
+   "category": "History",
+   "difficulty": 2,
+   "text": "For how many full years did Queen Elizabeth II reign?",
+   "answer": 70,
+   "unit": "years",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Elizabeth_II"
+  },
+  {
+   "id": "his-010",
+   "category": "History",
+   "difficulty": 2,
+   "text": "In what year did Sweden join the European Union?",
+   "answer": 1995,
+   "unit": "year",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Sweden_in_the_European_Union"
+  },
+  {
+   "id": "spo-001",
+   "category": "Sports",
+   "difficulty": 2,
+   "text": "How long is a marathon, in metres?",
+   "answer": 42195,
+   "unit": "m",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Marathon"
+  },
+  {
+   "id": "spo-002",
+   "category": "Sports",
+   "difficulty": 1,
+   "text": "How many players does each team have on the pitch in rugby union?",
+   "answer": 15,
+   "unit": "players",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Rugby_union"
+  },
+  {
+   "id": "spo-003",
+   "category": "Sports",
+   "difficulty": 2,
+   "text": "What is Usain Bolt's 100 m world record (set in 2009), in seconds?",
+   "answer": 9.58,
+   "unit": "s",
+   "precision": 2,
+   "source": "https://en.wikipedia.org/wiki/Usain_Bolt"
+  },
+  {
+   "id": "spo-004",
+   "category": "Sports",
+   "difficulty": 2,
+   "text": "How high is a regulation basketball rim above the floor, in centimetres (rounded)?",
+   "answer": 305,
+   "unit": "cm",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Basketball",
+   "note": "10 ft = 3.05 m"
+  },
+  {
+   "id": "spo-005",
+   "category": "Sports",
+   "difficulty": 1,
+   "text": "In what year were the first modern Olympic Games held?",
+   "answer": 1896,
+   "unit": "year",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/1896_Summer_Olympics"
+  },
+  {
+   "id": "spo-006",
+   "category": "Sports",
+   "difficulty": 3,
+   "text": "How wide is a football (soccer) goal, in metres?",
+   "answer": 7.32,
+   "unit": "m",
+   "precision": 2,
+   "source": "https://en.wikipedia.org/wiki/Association_football_pitch"
+  },
+  {
+   "id": "spo-007",
+   "category": "Sports",
+   "difficulty": 2,
+   "text": "What is the highest possible score in a game of ten-pin bowling?",
+   "answer": 300,
+   "unit": "points",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Perfect_game_(bowling)"
+  },
+  {
+   "id": "spo-008",
+   "category": "Sports",
+   "difficulty": 2,
+   "text": "How many Grand Slam singles titles did Björn Borg win?",
+   "answer": 11,
+   "unit": "titles",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Björn_Borg",
+   "note": "Singles: 6 French Open + 5 Wimbledon"
+  },
+  {
+   "id": "spo-009",
+   "category": "Sports",
+   "difficulty": 2,
+   "text": "How many men's FIFA World Cup tournaments were played up to and including 2022?",
+   "answer": 22,
+   "unit": "tournaments",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/FIFA_World_Cup",
+   "note": "1930-2022 every 4 years except 1942 and 1946 = 22 tournaments"
+  },
+  {
+   "id": "spo-010",
+   "category": "Sports",
+   "difficulty": 3,
+   "text": "How long is a cricket pitch, from stumps to stumps, in metres?",
+   "answer": 20.12,
+   "unit": "m",
+   "precision": 2,
+   "source": "https://en.wikipedia.org/wiki/Cricket_pitch"
+  },
+  {
+   "id": "ent-001",
+   "category": "Entertainment",
+   "difficulty": 1,
+   "text": "In what year did ABBA win the Eurovision Song Contest with \"Waterloo\"?",
+   "answer": 1974,
+   "unit": "year",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Waterloo_(ABBA_song)"
+  },
+  {
+   "id": "ent-002",
+   "category": "Entertainment",
+   "difficulty": 1,
+   "text": "In what year was the first Star Wars film released?",
+   "answer": 1977,
+   "unit": "year",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Star_Wars_(film)"
+  },
+  {
+   "id": "ent-003",
+   "category": "Entertainment",
+   "difficulty": 2,
+   "text": "How many Oscars did the 1997 film \"Titanic\" win?",
+   "answer": 11,
+   "unit": "Oscars",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Titanic_(1997_film)"
+  },
+  {
+   "id": "ent-004",
+   "category": "Entertainment",
+   "difficulty": 2,
+   "text": "How many episodes of \"Friends\" were made in total?",
+   "answer": 236,
+   "unit": "episodes",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Friends"
+  },
+  {
+   "id": "ent-005",
+   "category": "Entertainment",
+   "difficulty": 2,
+   "text": "In what year was the video game \"Super Mario Bros.\" first released?",
+   "answer": 1985,
+   "unit": "year",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Super_Mario_Bros."
+  },
+  {
+   "id": "ent-006",
+   "category": "Entertainment",
+   "difficulty": 1,
+   "text": "How many keys does a standard modern piano have?",
+   "answer": 88,
+   "unit": "keys",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Piano"
+  },
+  {
+   "id": "ent-007",
+   "category": "Entertainment",
+   "difficulty": 2,
+   "text": "How many official James Bond films had Eon Productions released by 2025?",
+   "answer": 25,
+   "unit": "films",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/James_Bond_(film_series)"
+  },
+  {
+   "id": "ent-008",
+   "category": "Entertainment",
+   "difficulty": 1,
+   "text": "In what year was the first Harry Potter book published?",
+   "answer": 1997,
+   "unit": "year",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Philosopher's_Stone"
+  },
+  {
+   "id": "ent-009",
+   "category": "Entertainment",
+   "difficulty": 2,
+   "text": "In what year was Spotify founded in Stockholm?",
+   "answer": 2006,
+   "unit": "year",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Spotify"
+  },
+  {
+   "id": "ent-010",
+   "category": "Entertainment",
+   "difficulty": 2,
+   "text": "How many spaces are there around a classic Monopoly board?",
+   "answer": 40,
+   "unit": "spaces",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Monopoly_(game)"
+  },
+  {
+   "id": "fun-001",
+   "category": "Weird & Fun Facts",
+   "difficulty": 1,
+   "text": "How many squares are on a chessboard?",
+   "answer": 64,
+   "unit": "squares",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Chessboard"
+  },
+  {
+   "id": "fun-002",
+   "category": "Weird & Fun Facts",
+   "difficulty": 1,
+   "text": "How many hearts does an octopus have?",
+   "answer": 3,
+   "unit": "hearts",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Octopus"
+  },
+  {
+   "id": "fun-003",
+   "category": "Weird & Fun Facts",
+   "difficulty": 2,
+   "text": "How tall is the Eiffel Tower, antennas included, in metres (2022)?",
+   "answer": 330,
+   "unit": "m",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Eiffel_Tower"
+  },
+  {
+   "id": "fun-004",
+   "category": "Weird & Fun Facts",
+   "difficulty": 2,
+   "text": "How tall is the Statue of Liberty from the ground to the tip of the torch, in metres?",
+   "answer": 93,
+   "unit": "m",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Statue_of_Liberty"
+  },
+  {
+   "id": "fun-005",
+   "category": "Weird & Fun Facts",
+   "difficulty": 3,
+   "text": "How long is the Great Wall of China, all branches included, in kilometres (2012 survey)?",
+   "answer": 21196,
+   "unit": "km",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Great_Wall_of_China"
+  },
+  {
+   "id": "fun-006",
+   "category": "Weird & Fun Facts",
+   "difficulty": 3,
+   "text": "In what year did the first IKEA furniture store open in Älmhult?",
+   "answer": 1958,
+   "unit": "year",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/IKEA"
+  },
+  {
+   "id": "fun-007",
+   "category": "Weird & Fun Facts",
+   "difficulty": 1,
+   "text": "How many letters are in the Swedish alphabet?",
+   "answer": 29,
+   "unit": "letters",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Swedish_alphabet",
+   "note": "Svenska Akademien (2006): 29 letters, w added"
+  },
+  {
+   "id": "fun-008",
+   "category": "Weird & Fun Facts",
+   "difficulty": 2,
+   "text": "How many neck vertebrae does a giraffe have?",
+   "answer": 7,
+   "unit": "vertebrae",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Cervical_vertebrae"
+  },
+  {
+   "id": "fun-009",
+   "category": "Weird & Fun Facts",
+   "difficulty": 1,
+   "text": "How tall is the Burj Khalifa in Dubai, in metres?",
+   "answer": 828,
+   "unit": "m",
+   "precision": 0,
+   "source": "https://en.wikipedia.org/wiki/Burj_Khalifa"
+  },
+  {
+   "id": "fun-010",
+   "category": "Weird & Fun Facts",
+   "difficulty": 3,
+   "text": "How heavy is the Hope Diamond, in carats?",
+   "answer": 45.52,
+   "unit": "carats",
+   "precision": 2,
+   "source": "https://en.wikipedia.org/wiki/Hope_Diamond"
+  }
+ ]
+}

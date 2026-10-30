@@ -1,0 +1,35 @@
+// Validates data/questions.json - run: node tools/validate-questions.js  (exit code 1 on any error)
+const fs = require('fs'), path = require('path');
+const file = process.argv[2] || path.join(__dirname, '..', 'data', 'questions.json');
+const bank = JSON.parse(fs.readFileSync(file, 'utf8'));
+const CATS = ['Geography', 'Science & Nature', 'History', 'Sports', 'Entertainment', 'Weird & Fun Facts'];
+const errs = [], warn = [], ids = new Set(), texts = new Set();
+if (JSON.stringify(bank.categories) !== JSON.stringify(CATS)) errs.push('categories must be exactly: ' + CATS.join(', '));
+if (!Array.isArray(bank.questions)) errs.push('questions must be an array');
+const KEYS = ['id', 'category', 'difficulty', 'text', 'answer', 'unit', 'precision', 'source'], OPT = ['note'];
+(bank.questions || []).forEach((q, i) => {
+  const at = (q && q.id) || '#' + i, e = (m) => errs.push(at + ': ' + m);
+  KEYS.forEach(k => { if (!(k in q)) e('missing "' + k + '"'); });
+  Object.keys(q).forEach(k => { if (!KEYS.includes(k) && !OPT.includes(k)) e('unknown field "' + k + '"'); });
+  if (!/^[a-z]{3}-\d{3}$/.test(q.id)) e('id must look like "geo-001"');
+  if (ids.has(q.id)) e('duplicate id'); ids.add(q.id);
+  if (!CATS.includes(q.category)) e('unknown category ' + q.category);
+  if (![1, 2, 3].includes(q.difficulty)) e('difficulty must be 1, 2 or 3');
+  if (typeof q.text !== 'string' || q.text.length < 15 || !q.text.trim().endsWith('?')) e('text must be a question ending with "?"');
+  const norm = String(q.text).toLowerCase().replace(/[^a-z0-9]/g, ''); if (texts.has(norm)) e('duplicate question text'); texts.add(norm);
+  if (typeof q.answer !== 'number' || !isFinite(q.answer) || q.answer <= 0) e('answer must be a positive number');
+  if (![0, 1, 2].includes(q.precision)) e('precision must be 0, 1 or 2 (decimals)');
+  else if (Math.round(q.answer * Math.pow(10, q.precision)) / Math.pow(10, q.precision) !== q.answer) e('answer has more decimals than precision');
+  if (typeof q.unit !== 'string' || !q.unit) e('unit required ("year" for years)');
+  if (q.unit === 'year' && (q.answer % 1 || q.answer > 2100)) e('year must be an integer <= 2100');
+  if (!/^https:\/\/\S+$/.test(q.source || '')) e('source must be an https URL');
+  if (/\b(currently|today|now|this year)\b/i.test(q.text)) e('time-dependent wording: give a reference year instead');
+  if (/\b(population|record|members?|tallest|as of)\b/i.test(q.text) && !/\b(19|20)\d\d\b/.test(q.text) && !/\bmember states\b/.test(q.text)) warn.push(at + ': may change over time - consider adding a reference year');
+});
+const byCat = {}; (bank.questions || []).forEach(q => byCat[q.category] = (byCat[q.category] || 0) + 1);
+CATS.forEach(c => { if (!byCat[c]) errs.push('category ' + c + ' has no questions'); });
+console.log('questions:', (bank.questions || []).length, JSON.stringify(byCat));
+warn.forEach(w => console.log('warn:', w));
+errs.forEach(e => console.error('ERROR:', e));
+console.log(errs.length ? errs.length + ' error(s)' : 'questions.json is valid');
+process.exit(errs.length ? 1 : 0);
